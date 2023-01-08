@@ -21,10 +21,9 @@
 # # # 3 
 # # # 커피 1잔에 300원, 금액을 입력하여 몇반의 커피와 잔돈이 얼마나 남는지 출력
 # i = 300
-# y = 1 
-# coffee = int(input('금액은 얼마인가요?'))
-# print(coffee,"원")
-# while i > 300  :
-#     print('커피',i,'잔')
-#     i *= 300
-
+# cof = int(300)
+# cof2 = int(input('금액은 얼마인가요?'))
+# print(cof2,"원")
+# while cof2 > 300  :
+#     print('커피', int(cof2 / cof),'잔','잔돈은 ', cof2 % 300, '원 입니다.')
+#     cof2 /= 300
