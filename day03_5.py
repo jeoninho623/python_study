@@ -24,15 +24,29 @@
 #     print(i,'명')
  
 # 문제 : 문자열에서 알파벳 o의 갯수를 알려주세요.
-int = 'o'
+o_count = 0
 문자열 = 'Hello world, my name is python'
 for i in 문자열:
-    if i != int:
-        continue
-print('o의 갯수는',)
-# print('o의 갯수는', int , '개' )
+    if i == 'o':
+        o_count += 1
+print(o_count)
+
 # 문제 2 : 1월~12월을 출력하되 입력받은 월은 skip
+skip_month = int(input('건너뛰고자하는 월을 입력하세요>>'))
+for i in range(1,13) :
+    if i == skip_month:
+        continue
+    print(i,'월')
 
 # 문제 3 : 1월~12월을 출력하되 입력받은 월로부터는 출력 안함
+break_month = int(input('몇월부터 스킵할까요?>>'))
+for i in range(1,13) :
+    if i == break_month:
+        break
+    print(i,'월')
 
 # 문제 4 : 구구단을 만들어주세요
+for i in range(1, 10) :
+    for j in range(2,10) :
+        print(j, 'X', i, '=' ,i*j, end = '\t')
+    print()
