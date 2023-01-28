@@ -19,6 +19,6 @@ lin.fit(운동시간, 근육량)
 print(근육량예측)
 print('2.5시간 운동하면 근육량 증가량은',lin.predict([[2.5]]),'입니다.')                             # 2.5시간 운동하면 근육량이 얼마일까?
 
-plt.plot(운동시간, 근육량, color='blue')                  # 점
-plt.scatter(운동시간, 근육량예측, color='green')                # 선
+plt.scatter(운동시간, 근육량, color='blue')                  # 점 (제공데이터)
+plt.plot(운동시간, 근육량예측, color='green')                # 선  (예측값)
 plt.show()
